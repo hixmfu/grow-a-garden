@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grow a Garden - Roblox Game</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    @keyframes fadeSlide {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .fade-slide { animation: fadeSlide 1s ease-out forwards; }
+    .screenshot { transition: transform 0.3s ease; }
+    .screenshot:hover { transform: scale(1.03); }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navigation -->
+  <nav class="fixed w-full bg-gray-50 shadow-sm z-50">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="#hero" class="font-bold text-xl text-green-700">Grow a Garden</a>
+      <div class="space-x-6">
+        <a href="#about" class="text-gray-600 hover:text-green-700">About</a>
+        <a href="#features" class="text-gray-600 hover:text-green-700">Features</a>
+        <a href="#screenshots" class="text-gray-600 hover:text-green-700">Screenshots</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="min-h-screen flex flex-col justify-center items-center text-center px-4 fade-slide">
+    <h1 class="text-5xl font-bold mb-4">Grow a Garden</h1>
+    <p class="text-lg text-gray-600 mb-6 max-w-xl">
+      Nurture seeds, watch them flourish, and build the most beautiful garden in Roblox.
+    </p>
+    <a href="https://www.roblox.com/" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg transition">
+      Play on Roblox
+    </a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 px-4 max-w-4xl mx-auto text-center fade-slide">
+    <h2 class="text-3xl font-semibold mb-4">About the Game</h2>
+    <p class="text-gray-600">
+      Grow a Garden is a peaceful and rewarding Roblox experience where you plant seeds,
+      care for your plants, and unlock new tools and decorations. Compete with friends or
+      simply relax as you create your dream garden.
+    </p>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-20 bg-white px-4 fade-slide">
+    <div class="max-w-6xl mx-auto grid gap-8 md:grid-cols-3 text-center">
+      <div>
+        <div class="text-green-600 text-4xl mb-2">🌱</div>
+        <h3 class="text-xl font-semibold mb-2">Plant & Grow</h3>
+        <p class="text-gray-600">Plant a variety of seeds and watch them transform into vibrant gardens.</p>
+      </div>
+      <div>
+        <div class="text-green-600 text-4xl mb-2">🛠️</div>
+        <h3 class="text-xl font-semibold mb-2">Upgrade Tools</h3>
+        <p class="text-gray-600">Unlock better watering cans, shovels, and more as you progress.</p>
+      </div>
+      <div>
+        <div class="text-green-600 text-4xl mb-2">🏆</div>
+        <h3 class="text-xl font-semibold mb-2">Compete & Share</h3>
+        <p class="text-gray-600">Join events, earn rewards, and show off your garden to friends.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Screenshot Section -->
+  <section id="screenshots" class="py-20 px-4 max-w-6xl mx-auto fade-slide">
+    <h2 class="text-3xl font-semibold text-center mb-8">Screenshots</h2>
+    <div class="grid gap-6 md:grid-cols-3">
+      <img src="https://via.placeholder.com/400x250" alt="Garden Screenshot" class="rounded-lg shadow-md screenshot">
+      <img src="https://via.placeholder.com/400x250" alt="Gameplay Screenshot" class="rounded-lg shadow-md screenshot">
+      <img src="https://via.placeholder.com/400x250" alt="Tools Screenshot" class="rounded-lg shadow-md screenshot">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 py-6 text-center text-gray-500 text-sm">
+    © 2025 Grow a Garden. A Roblox experience.  
+    <a href="https://www.roblox.com/" target="_blank" class="text-green-600 hover:underline">Play Now</a>
+  </footer>
+
+</body>
+</html>
